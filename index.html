@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ponto do Lanche</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Ponto do Lanche</h1>
+    <p>Lanches simples e rápidos</p>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#pedido">Pedido</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Bem-vindo!</h2>
+      <p>Aqui você pode ver alguns lanches e montar um pedido.</p>
+      <button id="tema">Mudar cor</button>
+    </section>
+
+    <section id="cardapio">
+      <h2>Cardápio</h2>
+
+      <label for="categoria">Mostrar:</label>
+      <select id="categoria">
+        <option value="todos">Todos</option>
+        <option value="lanche">Lanches</option>
+        <option value="bebida">Bebidas</option>
+      </select>
+
+      <p id="avisoCategoria">Mostrando todos os produtos.</p>
+
+      <div class="produtos">
+        <article class="produto lanche">
+          <h3>X-Salada</h3>
+          <p>Pão, hambúrguer, queijo e salada.</p>
+          <strong>R$ 18,00</strong>
+          <button class="adicionar" data-nome="X-Salada" data-preco="18">Adicionar</button>
+        </article>
+
+        <article class="produto lanche">
+          <h3>X-Bacon</h3>
+          <p>Pão, hambúrguer, queijo e bacon.</p>
+          <strong>R$ 22,00</strong>
+          <button class="adicionar" data-nome="X-Bacon" data-preco="22">Adicionar</button>
+        </article>
+
+        <article class="produto bebida">
+          <h3>Refrigerante</h3>
+          <p>Lata de 350 ml.</p>
+          <strong>R$ 7,00</strong>
+          <button class="adicionar" data-nome="Refrigerante" data-preco="7">Adicionar</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="pedido">
+      <h2>Meu pedido</h2>
+      <ul id="listaPedido">
+        <li id="pedidoVazio">Nenhum item adicionado.</li>
+      </ul>
+      <p><strong>Total: R$ <span id="total">0,00</span></strong></p>
+      <button id="limpar">Limpar pedido</button>
+
+      <form id="formPedido">
+        <h3>Finalizar</h3>
+
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <p id="textoNome"></p>
+
+        <label for="retirada">Receber por:</label>
+        <select id="retirada">
+          <option value="">Escolha</option>
+          <option value="Retirada">Retirada</option>
+          <option value="Entrega">Entrega</option>
+        </select>
+
+        <button type="submit">Enviar pedido</button>
+        <p id="mensagem"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ponto do Lanche - 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

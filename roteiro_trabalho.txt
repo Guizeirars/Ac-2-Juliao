@@ -1,0 +1,61 @@
+AC2 - Manipulação de DOM com JavaScript
+Projeto: Ponto do Lanche
+
+Aluno (cliente): Guilherme Anselmo 
+Aluno (desenvolvedor): Guilherme Pimentel
+
+EMPRESA
+Nome: Ponto do Lanche
+Ramo: lanchonete
+Público: estudantes e moradores do bairro.
+
+IDEIA
+O cliente pediu um site simples para mostrar alguns produtos e montar um pedido. A pessoa pode adicionar itens, ver o total e preencher o nome para finalizar.
+
+O QUE O CLIENTE PEDIU
+- Ter Início, Cardápio e Pedido.
+- Mostrar lanches e bebidas.
+- Ter filtro por categoria.
+- Adicionar produtos no pedido.
+- Mostrar o total.
+- Poder limpar o pedido.
+- Ter um formulário simples.
+- Funcionar no celular.
+
+PERGUNTAS DO DESENVOLVEDOR
+
+1. Precisa de login?
+Não.
+
+2. Quantos produtos vão aparecer?
+Por enquanto 3 produtos.
+
+3. Precisa mostrar o valor total?
+Sim.
+
+4. Pode apagar o pedido?
+Sim, usando o botão "Limpar pedido".
+
+5. O formulário precisa ser validado?
+Sim. Precisa ter nome, produto e forma de recebimento.
+
+6. Precisa funcionar no celular?
+Sim.
+
+EVENTOS USADOS NO JAVASCRIPT
+1. click - adicionar produto.
+2. click - limpar pedido.
+3. change - mudar o filtro do cardápio.
+4. input - mostrar o nome digitado.
+5. click - mudar a cor da página.
+6. submit - validar o formulário.
+
+MANIPULAÇÃO DE DOM
+- querySelector e querySelectorAll para pegar elementos.
+- createElement e appendChild para adicionar itens.
+- remove e innerHTML para remover ou mudar conteúdo.
+- classList para esconder produtos e mudar a cor da página.
+- setAttribute para alterar um atributo do botão.
+
+TESTES
+Testamos os links, os botões, o filtro, o total, o formulário e a versão para celular.
